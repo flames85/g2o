@@ -1,3 +1,9 @@
 build*
 lib
 bin
+CMakeFiles
+CMakeScripts
+EXTERNAL
+*.cmake
+g2o.build
+.DS_Store

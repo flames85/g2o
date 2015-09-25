@@ -35,7 +35,17 @@
 #include "macros.h"
 #include "g2o_stuff_api.h"
 
+#if (defined (UNIX) || defined(CYGWIN)) && !defined(ANDROID)
+#include <wordexp.h>
+#endif
+
+// todo
+int fix_wordexp(const char * __restrict, wordexp_t * __restrict, int);
+void fix_wordfree(wordexp_t * __restrict);
+
+
 namespace g2o {
+    
 
 /** @addtogroup utils **/
 // @{

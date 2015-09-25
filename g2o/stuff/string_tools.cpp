@@ -41,6 +41,20 @@
 #include <wordexp.h>
 #endif
 
+
+
+
+int fix_wordexp(const char * __restrict, wordexp_t * __restrict, int)
+{
+    return 0;
+}
+
+void fix_wordfree(wordexp_t * __restrict)
+{
+    
+}
+
+
 namespace g2o {
 
 using namespace std;
@@ -126,12 +140,11 @@ std::string strExpandFilename(const std::string& filename)
 #if (defined (UNIX) || defined(CYGWIN)) && !defined(ANDROID)
   string result = filename;
   wordexp_t p;
-
-  wordexp(filename.c_str(), &p, 0);
+  fix_wordexp(filename.c_str(), &p, 0);
   if(p.we_wordc > 0) {
     result = p.we_wordv[0];
   }
-  wordfree(&p);
+  fix_wordfree(&p);
   return result;
 #else
   (void) filename;

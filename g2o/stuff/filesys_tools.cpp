@@ -38,6 +38,7 @@
 #include <sys/types.h>
 #include <cstdio>
 #include <iostream>
+#include "string_tools.h"
 
 #ifdef WINDOWS
 #include <windows.h>
@@ -137,7 +138,7 @@ std::vector<std::string> getFilesByPattern(const char* pattern)
 #elif (defined (UNIX) || defined (CYGWIN)) && !defined(ANDROID)
 
   wordexp_t p;
-  wordexp(pattern, &p, 0);
+  fix_wordexp(pattern, &p, 0);
 
   // For some reason, wordexp sometimes fails on an APPLE machine to
   // return anything; therefore, run it several times until we do find
@@ -146,7 +147,7 @@ std::vector<std::string> getFilesByPattern(const char* pattern)
   for (int k = 0; (k < 100) && (p.we_wordc == 0); k++) {
     //chrono::milliseconds duration(20);
     //this_thread::sleep_for(duration);
-    wordexp(pattern, &p, WRDE_APPEND);
+    fix_wordexp(pattern, &p, WRDE_APPEND);
   }
 #endif
 
@@ -154,7 +155,7 @@ std::vector<std::string> getFilesByPattern(const char* pattern)
   for (size_t i = 0; i < p.we_wordc; ++i)
     result.push_back(p.we_wordv[i]);
   
-  wordfree(&p);
+  fix_wordfree(&p);
 
 #endif
 
