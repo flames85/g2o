@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0AF9719-17A1-4A40-A2BE-E50A1F2CC6A8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>g2o</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9052B469DB1CEC5F8AD50EB92823D6431669AED1</key>
+		<string>https://github.com/RainerKuemmerle/g2o.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>build-static/g2o.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9052B469DB1CEC5F8AD50EB92823D6431669AED1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RainerKuemmerle/g2o.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9052B469DB1CEC5F8AD50EB92823D6431669AED1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9052B469DB1CEC5F8AD50EB92823D6431669AED1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>g2o</string>
+		</dict>
+	</array>
+</dict>
+</plist>
