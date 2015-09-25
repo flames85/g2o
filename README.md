@@ -5,6 +5,7 @@
 # my command list
 
 1. vim CMakeLists.txt
+
 "- OPTION (BUILD_SHARED_LIBS "Build Shared Libraries (preferred and required for the g2o plugin system)" ON)"
 "+ OPTION (BUILD_SHARED_LIBS "Build Shared Libraries (preferred and required for the g2o plugin system)" OFF)"
 
