@@ -18,4 +18,4 @@ my command list
 3. cd build-static
 4. cmake -GXcode ..
 5. open with xcode
-5. some xcode modify config
+6. some xcode modify config(IOS8.4, arm64/armv7/armv7s, and so on)
