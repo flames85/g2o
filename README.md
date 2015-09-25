@@ -1,13 +1,14 @@
-# fork from https://github.com/RainerKuemmerle/g2o
+fork from https://github.com/RainerKuemmerle/g2o
 
-# for ios build
+for ios build
 
-# my command list
+my command list
 
 1. vim CMakeLists.txt
 
-"- OPTION (BUILD_SHARED_LIBS "Build Shared Libraries (preferred and required for the g2o plugin system)" ON)"
-"+ OPTION (BUILD_SHARED_LIBS "Build Shared Libraries (preferred and required for the g2o plugin system)" OFF)"
+  - OPTION (BUILD_SHARED_LIBS "Build Shared Libraries (preferred and required for the g2o plugin system)" ON)
+
+  + OPTION (BUILD_SHARED_LIBS "Build Shared Libraries (preferred and required for the g2o plugin system)" OFF)
 
 2. mkdir build-static
 3. cd build-static
