@@ -19,3 +19,6 @@ my command list
 4. cmake -GXcode ..
 5. open with xcode
 6. some xcode modify config(IOS8.4, arm64/armv7/armv7s, and so on)
+
+
+# So, plesae use build-static dir.
